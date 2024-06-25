@@ -1,5 +1,6 @@
 # quiz-app-mern
 
+```sh
 quiz-app-mern/
 ├── client/            // Frontend React app
 │   ├── public/
@@ -22,3 +23,4 @@ quiz-app-mern/
 │   └── ...
 ├── package.json       // Root level package.json for managing both frontend and backend
 └── README.md          // Project documentation
+```
