@@ -1,0 +1,19 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "quiz-app-mern/\r ├── client/            // Frontend React app\r │   ├── public/\r │   ├── src/\r │   │   ├── components/     // React components\r │   │   ├── pages/          // React pages (e.g., Home, Quiz, Admin)\r │   │   ├── services/       // API service integration (Axios, Fetch)\r │   │   ├── App.js          // Main React component\r │   │   ├── index.js        // Entry point for React app\r │   │   └── ...\r │   ├── package.json      // Frontend dependencies and scripts\r │   └── ...\r ├── server/            // Backend Node.js server\r │   ├── models/          // Mongoose models (User, Quiz, Question)\r │   ├── routes/          // Express routes (API endpoints)\r │   ├── controllers/     // Logic handling for routes\r │   ├── config/          // Configuration files (e.g., MongoDB connection)\r │   ├── app.js           // Entry point for Express server\r │   ├── package.json     // Backend dependencies and scripts\r │   └── ...\r ├── package.json       // Root level package.json for managing both frontend and backend\r └── README.md          // Project documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3"
+  }
+}
