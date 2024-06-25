@@ -1,6 +1,6 @@
 # quiz-app-mern
 
-```sh
+```bash
 quiz-app-mern/
 ├── client/            // Frontend React app
 │   ├── public/
