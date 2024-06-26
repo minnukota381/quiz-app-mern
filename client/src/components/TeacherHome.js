@@ -1,7 +1,6 @@
-// components/TeacherHome.js
-
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 const TeacherHome = () => {
   const handleLogout = () => {
@@ -11,11 +10,17 @@ const TeacherHome = () => {
   };
 
   return (
-    <div>
-      <h2>Teacher Home</h2>
-      <Link to="/add-quiz">Add New Quiz</Link>
-      <button onClick={handleLogout}>Logout</button>
-    </div>
+    <Container>
+      <Row className="justify-content-md-center">
+        <Col md="auto">
+          <h2>Teacher Home</h2>
+          <Link to="/add-quiz">
+            <Button variant="primary" className="mt-3">Add New Quiz</Button>
+          </Link>
+          <Button variant="danger" onClick={handleLogout} className="mt-3 ml-3">Logout</Button>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

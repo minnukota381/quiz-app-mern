@@ -1,22 +1,27 @@
-// components/StudentHome.js
-
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/Login';
+import Register from './components/Register';
+import TeacherHome from './components/TeacherHome';
+import StudentHome from './components/StudentHome';
+import AddQuiz from './components/AddQuiz';
+import TakeQuiz from './components/TakeQuiz'; // Import TakeQuiz component
 
-const StudentHome = () => {
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('role');
-    // Redirect to login or homepage
-  };
-
+function App() {
   return (
-    <div>
-      <h2>Student Home</h2>
-      <Link to="/take-quiz">Take Quiz</Link>
-      <button onClick={handleLogout}>Logout</button>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/teacher-home" element={<TeacherHome />} />
+          <Route path="/student-home" element={<StudentHome />} />
+          <Route path="/add-quiz" element={<AddQuiz />} />
+          <Route path="/take-quiz" element={<TakeQuiz />} /> {/* Add route for TakeQuiz */}
+        </Routes>
+      </div>
+    </Router>
   );
-};
+}
 
-export default StudentHome;
+export default App;
