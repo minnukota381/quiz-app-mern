@@ -1,5 +1,3 @@
-// components/Login.js
-
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
@@ -16,7 +14,7 @@ const Login = () => {
       const loginUser = { username, password };
       const res = await axios.post('/api/auth/login', loginUser);
       localStorage.setItem('token', res.data.token);
-      localStorage.setItem('role', res.data.role); // Assuming the role is returned in the response
+      localStorage.setItem('role', res.data.role); // Save the role in localStorage for future use
       if (res.data.role === 'teacher') {
         navigate('/teacher-home');
       } else {
@@ -56,4 +54,3 @@ const Login = () => {
 };
 
 export default Login;
-

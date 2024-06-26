@@ -6,7 +6,7 @@ import axios from 'axios';
 const Register = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState('student'); // Default role
+  const [role, setRole] = useState('teacher'); // Default role
 
   const handleSubmit = async (e) => {
     e.preventDefault();
